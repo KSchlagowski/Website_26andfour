@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Frontend Dev Course</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -18,7 +18,8 @@
                 </a>
 
                 <ul class="show-desktop hide-mobile" id="nav">
-                    <li id="exit" class="exit-btn hide-desktop"><img src="images/exit.svg" alt="exit menu"></li>
+                    <li id="exit" class="exit-btn hide-desktop">
+                        <img src="images/exit.svg" alt="exit menu"></li>
                     <li><a href="#">home</a></li>
                     <li><a href="#">services</a></li>
                     <li><a href="#">about</a></li>
@@ -101,6 +102,29 @@
         </div>
     </footer>
 
+
+
+
+
+    <!-- javascript -->
+    <script>
+
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener('click', function(e) {
+            // alert('I have been clicked')
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault(); //browser don't go up
+        });
+
+        exit.addEventListener('click', function(e) {
+            nav.classList.add('hide-mobile');
+            e.preventDefault(); //browser don't go up
+        });
+
+    </script>
 
 </body>
 </html>
