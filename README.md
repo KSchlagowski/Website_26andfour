@@ -1,2 +1,2 @@
 # Website_26andfour
-Recoded website from DesignCourse tutorial.
+Coded-along website from DesignCourse tutorial.
